@@ -3,7 +3,7 @@ import Two from './components/Two'
 
 function App() {
   return (
-    <div>App
+    <div>
       <Two/>
     </div>
   )

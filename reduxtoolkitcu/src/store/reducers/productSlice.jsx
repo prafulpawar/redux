@@ -27,9 +27,19 @@ const initialState = {
 const productSlice = createSlice({
   name: "products",
   initialState,
+    reducers:{
+        add:(state,action)=>{
+          state.products.push(action.payload)
+        },
+        deleteProduct:(state,action)=>{
+          state.products.pop()
+        }
+    }
   
 });
 
 export default productSlice.reducer;
+export const {add} = productSlice.actions
+export const {deleteProduct} = productSlice.actions
 
 // productSlice.actions
