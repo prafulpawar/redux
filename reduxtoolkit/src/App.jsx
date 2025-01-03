@@ -1,8 +1,11 @@
 import React from 'react'
+import Two from './components/Two'
 
 function App() {
   return (
-    <div>App</div>
+    <div>App
+      <Two/>
+    </div>
   )
 }
 
